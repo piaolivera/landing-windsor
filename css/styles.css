@@ -163,3 +163,7 @@ p {
         margin-left: 10px; /* Ajusta el valor según tu preferencia */
     }
 }
+
+.media-body p {
+    text-align: center;
+}
