@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: 'DIN Condensed', Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los enlaces de navegación en el encabezado */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6347;
+}
+
+/* Estilo de la imagen del logo */
+.logo {
+    width: 50%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Estilos para los íconos de redes sociales en el pie de página */
+footer a.text-black.fs-4 i {
+    transition: color 0.3s ease;
+    color: #000;
+    font-size: 44px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+footer a.text-black.fs-4:hover i {
+    color: #ff6347;
+}
+
+/* Estilos para las imágenes de los niveles */
+.kid {
+    max-width: 100px;
+    height: auto;
+    background: url(/img/niños.jpg);
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 30px 30px 30px 0;
+}
+
+/* Estilos para las imágenes redondeadas */
+.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos para la galería de fotos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.image {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para todos los párrafos */
+p {
+    padding: 20px; /* Aplica el mismo padding a todos los párrafos */
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Estilo de énfasis utilizando clases de Bootstrap */
+.emphasis {
+    font-weight: bold;
+    /* Texto en negrita */
+    color: #ff6347;
+    /* Color de énfasis (rojo de Bootstrap) */
+    font-size: 20px;
+    /* Tamaño de fuente ligeramente más grande */
+}
+
+/* Estilo para fuentes personalizadas */
+.custom-font {
+    font-family: 'DIN Condensed', sans-serif;
+    /* Fuentes personalizadas */
+}
+
+/* Estilos para dispositivos más pequeños como iPads */
+@media (max-width: 992px) {
+    .col.mb-4 {
+        margin-bottom: 20px; /* Ajusta el margen inferior según tus preferencias */
+    }
+
+    .media.text-center {
+        margin-bottom: 20px; /* Ajusta el margen inferior según tus preferencias */
+    }
+
+    .media-body {
+        margin-top: 0; /* Elimina el margen superior en dispositivos más pequeños */
+    }
+
+    .col-md-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Aplica el mismo padding que .custom-paragraph en dispositivos móviles */
+    p {
+        padding: 20px;
+    }
+}
+
+.navbar .fab:hover {
+    color: #ff6347; /* Cambia el color al hacer hover a rojo (#ff6347) */
+}
+
+/* Estilo personalizado para los párrafos con clase .custom-paragraph en dispositivos móviles */
+.custom-paragraph {
+    margin: 20px; /* Márgenes para dispositivos móviles */
+    padding: 20px; /* Espacio interno para dispositivos móviles */
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Media Query para dispositivos de escritorio (ancho de pantalla mayor a 768px) */
+@media (min-width: 769px) {
+    .custom-paragraph {
+        margin-left: 85px; /* Márgen izquierdo más ancho */
+        margin-right: 85px; /* Márgen derecho más ancho */
+    }
+}
+
+.custom-background {
+    background-color: rgb(245, 240, 240); /* Cambia el color de fondo aquí */
+    display: inline-block; /* Para que la altura sea igual a la del párrafo si lo deseas */
+}
+
+/* Ajusta el margen izquierdo de las imágenes en el navbar en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        margin-left: 10px; /* Ajusta el valor según tu preferencia */
+    }
+}
